@@ -1,0 +1,75 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Registracija pas gydytoją</title>
+    <meta name="description" content="Registration Form">
+    <meta name="author" content="Xidomas">
+    <link rel="stylesheet" href="styles.css?v=12">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts.js?v=12"></script>
+</head>
+<body>
+    <div class="regBody">
+        <div class="regForm">
+            <div class="regFormT">
+                <h2>Registracijos Forma</h2>
+                <div class="regFormTL"></div>
+            </div>
+            <div class="regFormMid">
+                <div class="regFormInput">
+                    <form action="/nascent/list.html">
+                        <div>
+                            <label for="name">Vardas:</label>
+                            <input id="name" type="text" name="name" placeholder="Vardenis" maxlength="15" onkeypress='return ((event.charCode >= 97 && event.charCode <= 122) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode == 260) || (event.charCode == 261) || (event.charCode == 280) || (event.charCode == 281) || (event.charCode == 278) || (event.charCode == 279) || (event.charCode == 302) || (event.charCode == 303) || (event.charCode == 370) || (event.charCode == 371) || (event.charCode == 362) || (event.charCode == 363) || (event.charCode == 268) || (event.charCode == 269) || (event.charCode == 352) || (event.charCode == 353) || (event.charCode == 381) || (event.charCode == 382))'>
+                        </div>
+                        <div>
+                            <label for="lastName">Pavardė:</label>
+                            <input id="lastName" type="text" name="lastName" placeholder="Pavardenis" maxlength="15" onkeypress='return ((event.charCode >= 97 && event.charCode <= 122) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode == 260) || (event.charCode == 261) || (event.charCode == 280) || (event.charCode == 281) || (event.charCode == 278) || (event.charCode == 279) || (event.charCode == 302) || (event.charCode == 303) || (event.charCode == 370) || (event.charCode == 371) || (event.charCode == 362) || (event.charCode == 363) || (event.charCode == 268) || (event.charCode == 269) || (event.charCode == 352) || (event.charCode == 353) || (event.charCode == 381) || (event.charCode == 382))'>
+                        </div>
+                        <div>
+                            <label for="age">Metai:</label>
+                            <input id="age" type="number" name="age" placeholder="18" min="18" max="110" step="1">
+                        </div>
+                        <div>
+                            <label for="email">El. paštas:</label>
+                            <input id="email" type="text" name="email" placeholder="Vard.pav@gmail.com">
+                        </div>
+                        <div>
+                            <label for="tel">Telefono numeris:</label>
+                            <select id="telCode">
+                                <option disabled selected value></option>
+                                <option>+370</option>
+                                <option>+371</option>
+                                <option>+372</option>
+                            </select>
+                            <input id="tel" type="number" name="tel" placeholder="6xxxxxxx">
+                        </div>
+                        <div>
+                            <label for="italy">Ar buvote Italijoje?</label>
+                            <input id="italy" type="radio" name="italy" value="Taip"><span>Taip</span>
+                            <input id="italy" type="radio" name="italy" value="Ne"><span>Ne</span>
+                        </div>
+                        <div>
+                            <label for="doctor">Gydytojas:</label>
+                            <select id="doctor">
+                                <option disabled selected value></option>
+                                <option>Dominykas Mykolaitis</option>
+                                <option>Raivydas Česlauskas</option>
+                                <option>Valerij Trekailo</option>
+                                <option>Dainius Jankevičius</option>
+                            </select>
+                        </div>
+                        <div class="regBHolder">
+                            <button id="regBtn" type="submit" disabled>Registruotis</button>
+                            <div class="lstBut">
+                                <button><a href="/nascent/list.html">Eiti į registracijų sąrašą</a></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.regBody{
+    display: flex;
+    justify-content: space-around;
+}
+.regForm{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-color: #6b97e7;
+    width: 50%;
+    border-radius: 25px;
+}
+.regFormT{
+    text-align: center;
+}
+.regFormT h2{
+    color: #ffffff;
+    font-family: Sans-Serif;
+}
+.regFormTL{
+    height: 2px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    width: 40%;
+    margin: 0 auto;
+}
+.regFormMid{
+    display: flex;
+    padding: 50px 50px 50px 50px;
+    justify-content: space-around;
+}
+.regFormInput{
+    width: 70%;
+}
+label{
+    float:left;
+    width: 40%;
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #ffffff;
+}
+input{
+    margin-bottom: 20px;
+    width: 50%;
+}
+.error
+{
+    border:2px solid #FF0000;
+}
+#telCode{
+    width: 10%;
+}
+#tel{
+    width: 39.5%;
+}
+#italy{
+    width: 20px;
+}
+span{
+    color:#ffffff;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+#doctor{
+    width: 50%;
+}
+.regBHolder{
+    margin-top: 40px;
+    text-align: center;
+}
+.lstBut{
+    margin-top: 15px;
+}
+a{
+    text-decoration: none;
+}
+.regList{
+    width: 80%;
+    min-width: 920px;
+    margin-top: 25px;
+}
+.regListTable{
+    border: solid #000000 2px;
+    margin-bottom: 25px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td{
+    text-align: left;
+}
+td{
+    padding: 5px 10px 5px 10px;
+}
+tr{
+    background-color: #f2f2f2;
+    border: solid #808080 1px;
+}
+th{
+    background-color: #3e70cc;
+    font-family: Helvetica;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 5px 10px 5px 10px;
+}
+.thID{
+    width: 100px;
+}
+.thName{
+    width: 180px;
+}
+.thLastName{
+    width: 180px;
+}
+.thAge{
+    width: 52px;
+}
+.thEl{
+    width: 380px;
+}
+.thTel{
+    width: 130px;
+}
+.thIt{
+    width: 110px;
+}
+.thDoc{
+    width: 190px;
+}
+@media only screen and (max-width: 1270px) {
+label{
+    width: 100%;
+    margin-bottom: 25px;
+}
+input{
+    width: 100%;
+}
+#telCode{
+    width: 17%;
+}
+#tel{
+    width: 80%;
+}
+#doctor{
+    width: 100%;
+}
+}
+@media only screen and (min-width: 768px){
+}
+@media only screen and (min-width: 600px){
+}
+@media only screen and (max-width: 600px){
+}
